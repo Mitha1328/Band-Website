@@ -39,7 +39,7 @@ a:nth-child(1){
 }
 nav .start-music,a:nth-child(1):hover~.animation{
     width: 110px;
-    left: 0;
+    left: 10%;
 }
 /*2*/
 a:nth-child(2){
@@ -47,7 +47,7 @@ a:nth-child(2){
 }
 nav .start-band,a:nth-child(2):hover~.animation{
     width: 100px;
-    left: 110;
+    left: 30%;
 }
 /*3*/
 a:nth-child(3){
@@ -55,7 +55,7 @@ a:nth-child(3){
 }
 nav .start-tour,a:nth-child(3):hover~.animation{
     width: 100px;
-    left: 210;
+    left: 50%;
 }
 /*4*/
 a:nth-child(4){
@@ -63,7 +63,7 @@ a:nth-child(4){
 }
 nav .start-booking,a:nth-child(4):hover~.animation{
     width: 160px;
-    left: 310;
+    left: 70%;
 }
 /*5*/
 a:nth-child(5){
@@ -71,7 +71,7 @@ a:nth-child(5){
 }
 nav .start-shop,a:nth-child(5):hover~.animation{
     width: 100px;
-    left: 410;
+    left: 90%;
 }
 /*6*/
 a:nth-child(6){
@@ -79,5 +79,5 @@ a:nth-child(6){
 }
 nav .start-bandarchive,a:nth-child(6):hover~.animation{
     width: 200px;
-    left: 610;
+    left: 110%;
 }
