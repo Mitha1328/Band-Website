@@ -5,13 +5,13 @@ body{
 }
 nav{
     position: relative;
-    margin: 27px auto 0;
-    width: 590px;
+    margin: 30px auto 0;
+    width: 750px;
     height: 50px;
     background: #000000;
     border-radius: 8px;
     font-size: 0;
-    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 2px 3px 0 0 rgba(0,0,0,0,.1);
 }
 nav a{
     font-size: 15px;
@@ -31,7 +31,7 @@ nav .animation{
     z-index: 0;
     background: #797979;
     border-radius: 8px;
-    transition: all .5s ease 0s;
+    transition: all .6s ease 0s;
 }
 /*1*/
 a:nth-child(1){
@@ -39,7 +39,7 @@ a:nth-child(1){
 }
 nav .start-music,a:nth-child(1):hover~.animation{
     width: 110px;
-    left: 10%;
+    left: 0%;
 }
 /*2*/
 a:nth-child(2){
@@ -47,7 +47,7 @@ a:nth-child(2){
 }
 nav .start-band,a:nth-child(2):hover~.animation{
     width: 100px;
-    left: 30%;
+    left: 14.5%;
 }
 /*3*/
 a:nth-child(3){
@@ -55,7 +55,7 @@ a:nth-child(3){
 }
 nav .start-tour,a:nth-child(3):hover~.animation{
     width: 100px;
-    left: 50%;
+    left: 28%;
 }
 /*4*/
 a:nth-child(4){
@@ -63,7 +63,7 @@ a:nth-child(4){
 }
 nav .start-booking,a:nth-child(4):hover~.animation{
     width: 160px;
-    left: 70%;
+    left: 41%;
 }
 /*5*/
 a:nth-child(5){
@@ -71,13 +71,13 @@ a:nth-child(5){
 }
 nav .start-shop,a:nth-child(5):hover~.animation{
     width: 100px;
-    left: 90%;
+    left: 62.5%;
 }
 /*6*/
 a:nth-child(6){
-    width: 200px;
+    width: 150px;
 }
 nav .start-bandarchive,a:nth-child(6):hover~.animation{
-    width: 200px;
-    left: 110%;
+    width: 190px;
+    left: 75%;
 }
