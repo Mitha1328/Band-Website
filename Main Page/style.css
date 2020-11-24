@@ -8,6 +8,7 @@ nav ul li a{
     font-family: 'Permanent Marker', cursive;
     font-size: 300%;
 }
+/*
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
@@ -15,6 +16,7 @@ nav ul li a{
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+*/
 
 /*Menu Styles*/
 /*Strip the ul of padding and list styling*/
@@ -228,10 +230,26 @@ div a, h4 a:active {
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 300%;
-    color: #f3f3f3;
+    color: #000000;
     text-shadow: #413f3f;
+    background-image: url("First_Flex_Pic.jpg");
   }
-
+.small_box{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: row; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 500px; 
+    height: 500px; 
+    top: 12%; 
+    left: 12%; 
+    background: rgba(255, 254, 166, 0.685);  
+}
 
 .Second-column {
     background-color: rgba(224, 145, 211, 0.685);
@@ -245,6 +263,7 @@ div a, h4 a:active {
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 300%;
+
   }
 
 
@@ -317,28 +336,21 @@ div a, h4 a:active {
     font-size: 300%;
     color: #f3f3f3;
   }
+  /*Style for the word History (In Titles)*/
   .History{
     font-family: 'Special Elite', cursive;
     font-weight: 9000;
     color: #000000;
     text-align: center;
-    font-size: 1000%;
+    font-size: 200%;
   }
-  .background{
-    width: 1550px;
-    height: 1000px;
-    text-align: center;
-    background-position: center;
-    background-image: url('Sec_Background_Try_3.jpg');
-    /*background-repeat: no-repeat;
-    background-size: 1440px 1000px;*/
-  }
-  .double-column {
+/*Style for the longer lengthed flex box Number 1*/
+.double-column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 2
-  }
+}
   .Fifth-column {
     background-color: rgba(75, 243, 145, 0.267);
     height: 600px;
@@ -351,12 +363,13 @@ div a, h4 a:active {
     text-align: center;
     font-family: 'Montserrat Subrayada', sans-serif;
     font-size: 300%;
-    color: #f3f3f3;
+    color: #000000;
+    background-image: url("Fifth_Flex_Pic_2.jpg");
   }
 .btn{
       display : inline-block;
       padding: 2.7rem 7.5rem;
-      background: #f3f3f3;
+      background: #a3a3a3ab;
       font-size: 2rem;
       text-decoration: none;
       color: #000000;
@@ -367,11 +380,49 @@ div a, h4 a:active {
     width: 1230px;
     height: 600px;
   }
-  
-.container_Fifth:hover .image_sc {
-    opacity: 0.3;
-}
-  
-.container_Fifth:hover .middle_sc {
-    opacity: 1;
+/*Style for the longer lengthed flex box Number 2*/
+  .Sixth-column {
+    background-color: rgba(75, 243, 145, 0.267);
+    height: 600px;
+    width: 1230px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #000000;
+    background-image: url("Sixth_Flex_Pic_2.jpg");
+  }
+.btn{
+      display : inline-block;
+      padding: 2.7rem 7.5rem;
+      background: #a3a3a3ab;
+      font-size: 2rem;
+      text-decoration: none;
+      color: #000000;
+      border-radius: 10px;
+  }
+.container_Sixth {
+    position: relative;
+    width: 1230px;
+    height: 600px;
+  }
+  .small_box_2{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 1100px; 
+    height: 530px; 
+    top: 5%; 
+    left: 5%; 
+    background: rgba(255, 255, 251, 0.685);  
 }
