@@ -8,7 +8,6 @@ nav ul li a{
     font-family: 'Permanent Marker', cursive;
     font-size: 300%;
 }
-/*
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
@@ -16,20 +15,26 @@ nav ul li a{
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://db.onlinewebfonts.com/c/f793a2c530106da61b2ded9010e1fb57?family=Edo+SZ');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /*Menu Styles*/
 /*Strip the ul of padding and list styling*/
 ul {
     list-style-type:none;
     margin:0px;
-    padding: 20px;
+    padding: 40px;
     position: relative;
 }
 /*Create a horizontal list with spacing*/
 li {
     display:inline-block;
-    margin-right: 60px;
+    margin-right: 93px;
 }
 /*Style for menu links*/
 li a {
@@ -83,7 +88,7 @@ ul li a:hover + .hidden, .hidden:hover {
     font-family: 'Cousine', monospace;
     text-decoration: none;
     color: #fff;
-    background: #ee9510;
+    background: #0b3742;
     text-align: center;
     padding: 10px 0;
     display: none;
@@ -96,9 +101,16 @@ input[type=checkbox]{
 input[type=checkbox]:checked ~ #menu{
     display: block;
 }
+.hero-image .hero-text h1{
+    font-size: 580%;
+    padding: 0%;
+}
 /*Responsive Styles*/
 @media screen and (max-width : 860px){
     /*Make dropdown links appear inline*/
+    .hero-image .hero-text h1{
+        font-size: 300%;
+    }
     ul {
         position: static;
         display: none;
@@ -125,6 +137,7 @@ body, html {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     justify-content: center;
+    background-color: #000000;
 }
 
 /*Sticky navigation*/
@@ -380,6 +393,44 @@ div a, h4 a:active {
     width: 1230px;
     height: 600px;
   }
+  @media screen and (max-width : 860px)
+  {
+    .double-column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 2
+    }
+      .Fifth-column {
+        background-color: rgba(75, 243, 145, 0.267);
+        height: 600px;
+        width: 615px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 300%;
+        color: #000000;
+        background-image: url("Fifth_Flex_Pic_2.jpg");
+      }
+    .btn{
+          display : inline-block;
+          padding: 1rem 2rem;
+          background: #a3a3a3ab;
+          font-size: 2rem;
+          text-decoration: none;
+          color: #000000;
+          border-radius: 10px;
+      }
+    .container_Fifth {
+        position: relative;
+        width: 615px;
+        height: 600px;
+      }
+  }
 /*Style for the longer lengthed flex box Number 2*/
   .Sixth-column {
     background-color: rgba(75, 243, 145, 0.267);
@@ -425,4 +476,1179 @@ div a, h4 a:active {
     top: 5%; 
     left: 5%; 
     background: rgba(255, 255, 251, 0.685);  
+}
+@media screen and (max-width : 860px)
+  {
+    .Sixth-column {
+        background-color: rgba(75, 243, 145, 0.267);
+        height: 600px;
+        width: 615px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 300%;
+        color: #000000;
+        background-image: url("Sixth_Flex_Pic_2.jpg");
+      }
+    .btn{
+          display : inline-block;
+          padding: 1rem 2rem;
+          background: #a3a3a3ab;
+          font-size: 2rem;
+          text-decoration: none;
+          color: #000000;
+          border-radius: 10px;
+      }
+    .container_Sixth {
+        position: relative;
+        width: 615px;
+        height: 600px;
+      }
+      .small_box_2{
+        display: -webkit-flex; 
+        display: flex; 
+        -webkit-flex-direction: row; 
+        flex-direction: column; 
+        -webkit-align-items: center; 
+        align-items: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        position: absolute; 
+        width: 615px; 
+        height: 530px; 
+        top: 5%; 
+        left: 5%; 
+        background: rgba(255, 255, 251, 0.685);  
+    }
+  }
+/*Footer*/
+.footer{
+    position: fixed;
+    height: auto;
+    background-color: #000000;
+}
+svg {
+    width: 70px;
+    height: 70px;
+    fill: white;
+    padding: 40px;
+}
+svg:hover {
+    fill: rgb(255, 209, 156);
+}
+footer a{
+    text-decoration: none;
+}
+
+/* Style for Music.html */
+/* STYLE FOR ALBUM MADE IN THE AM */
+.Made_In_The_AM-column{
+    background-color: rgba(75, 243, 145, 0.267);
+    height: 700px;
+    width: 1240px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #ffffff;
+    background-image: url("made_in_the_am_flex.jpg");
+}
+.small_box_MITAM{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 1200px; 
+    height: 650px;
+    border-radius: 10px;
+    top: 3%; 
+    left: 1%; 
+    background: rgba(255, 120, 58, 0.568);  
+    font-size: 30%;
+    font-family: 'Source Code Pro', monospace;
+}
+.MITAM{
+    font-family: 'Lemon', cursive; 
+    font-size: 500%; 
+    text-align:center;
+    color: #ffffff;
+}
+.MITAM_btn{
+    display : inline-block;
+    padding: 2rem 7rem;
+    background: #e9e9e9ab;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+}
+.container_MITAM {
+    position: relative;
+    width: 1240px;
+    height: 700px;
+}
+.table{
+    width: 550px;
+}
+.table h2{
+    word-wrap: break-word;
+}
+
+@media screen and (max-width : 860px)
+  {
+    .Made_In_The_AM-column{
+        background-color: rgba(75, 243, 145, 0.267);
+        height: 700px;
+        width: 620px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 300%;
+        color: #ffffff;
+        background-image: url("made_in_the_am_flex.jpg");
+    }
+    .small_box_MITAM{
+        display: -webkit-flex; 
+        display: flex; 
+        -webkit-flex-direction: row; 
+        flex-direction: column; 
+        -webkit-align-items: center; 
+        align-items: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        position: absolute; 
+        width: 600px; 
+        height: 650px;
+        border-radius: 10px;
+        top: 3%; 
+        left: 1%; 
+        background: rgba(255, 120, 58, 0.568);  
+        font-size: 30%;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .MITAM{
+        font-family: 'Lemon', cursive; 
+        font-size: 500%; 
+        text-align:center;
+        color: #ffffff;
+    }
+    .MITAM_btn{
+        display : inline-block;
+        padding: 2rem 4rem;
+        background: #e9e9e9ab;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 10px;
+    }
+    .container_MITAM {
+        position: relative;
+        width: 620px;
+        height: 700px;
+    }
+    .table{
+        width: 550px;
+    }
+    .table h2{
+        word-wrap: break-word;
+    }
+
+}
+
+/* Style for Album FOUR */
+.FOUR-column{
+    background-color: rgba(75, 243, 145, 0.267);
+    height: 700px;
+    width: 1240px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #ffffff;
+    background-image: url("FOUR_2.jpg");
+}
+.small_box_FOUR{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 1200px; 
+    height: 650px;
+    border-radius: 10px;
+    top: 3%; 
+    left: 1%; 
+    background: rgba(0, 0, 0, 0.438);  
+    font-size: 30%;
+    font-family: 'Source Code Pro', monospace;
+}
+.FOUR{
+    font-family: 'Righteous', cursive; 
+    font-size: 500%; 
+    text-align:center;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.FOUR_btn{
+    display : inline-block;
+    padding: 2rem 7rem;
+    background: #e9e9e9ab;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+}
+.container_FOUR {
+    position: relative;
+    width: 1240px;
+    height: 700px;
+}
+@media screen and (max-width : 860px)
+  {
+    .FOUR-column{
+        background-color: rgba(75, 243, 145, 0.267);
+        height: 700px;
+        width: 620px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 300%;
+        color: #ffffff;
+        background-image: url("FOUR_2.jpg");
+    }
+    .small_box_FOUR{
+        display: -webkit-flex; 
+        display: flex; 
+        -webkit-flex-direction: row; 
+        flex-direction: column; 
+        -webkit-align-items: center; 
+        align-items: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        position: absolute; 
+        width: 600px; 
+        height: 650px;
+        border-radius: 10px;
+        top: 3%; 
+        left: 1%; 
+        background: rgba(0, 0, 0, 0.438);  
+        font-size: 30%;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .FOUR{
+        font-family: 'Righteous', cursive; 
+        font-size: 500%; 
+        text-align:center;
+        color: #ffffff;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    .FOUR_btn{
+        display : inline-block;
+        padding: 2rem 4rem;
+        background: #e9e9e9ab;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 10px;
+    }
+    .container_FOUR {
+        position: relative;
+        width: 620px;
+        height: 700px;
+    }
+  }
+
+/* Style for Album MIDNIGHT MEMORIES */
+.MM-column{
+    background-color: rgba(75, 243, 145, 0.267);
+    height: 700px;
+    width: 1240px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #ffffff;
+    background-image: url("Midnight_Memories.jpg");
+}
+.small_box_MM{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 1200px; 
+    height: 650px;
+    border-radius: 10px;
+    top: 3%; 
+    left: 1%; 
+    background: rgba(255, 25, 25, 0.5);  
+    font-size: 30%;
+    font-family: 'Source Code Pro', monospace;
+}
+.MM{
+    font-family: "Edo SZ"; 
+    font-size: 500%; 
+    text-align:center;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.MM_btn{
+    display : inline-block;
+    padding: 2rem 7rem;
+    background: #e9e9e9ab;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+}
+.container_MM {
+    position: relative;
+    width: 1240px;
+    height: 700px;
+}
+@media screen and (max-width : 860px)
+  {
+    .MM-column{
+        background-color: rgba(75, 243, 145, 0.267);
+        height: 700px;
+        width: 620px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 300%;
+        color: #ffffff;
+        background-image: url("Midnight_Memories.jpg");
+    }
+    .small_box_MM{
+        display: -webkit-flex; 
+        display: flex; 
+        -webkit-flex-direction: row; 
+        flex-direction: column; 
+        -webkit-align-items: center; 
+        align-items: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        position: absolute; 
+        width: 600px; 
+        height: 650px;
+        border-radius: 10px;
+        top: 3%; 
+        left: 1%; 
+        background: rgba(255, 25, 25, 0.5);  
+        font-size: 30%;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .MM{
+        font-family: "Edo SZ"; 
+        font-size: 500%; 
+        text-align:center;
+        color: #ffffff;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    .MM_btn{
+        display : inline-block;
+        padding: 2rem 4rem;
+        background: #e9e9e9ab;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 10px;
+    }
+    .container_MM {
+        position: relative;
+        width: 620px;
+        height: 700px;
+    }
+  }
+
+/* Style for Album TAKE ME HOME */
+.TMH-column{
+    background-color: rgba(75, 243, 145, 0.267);
+    height: 700px;
+    width: 1240px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #ffffff;
+    background-image: url("Take_Me_Home.jpg");
+}
+.small_box_TMH{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 1200px; 
+    height: 650px;
+    border-radius: 10px;
+    top: 3%; 
+    left: 1%; 
+    background: rgba(154, 189, 255, 0.623);  
+    font-size: 30%;
+    font-family: 'Source Code Pro', monospace;
+}
+.TMH{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 500%; 
+    text-align:center;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.TMH_btn{
+    display : inline-block;
+    padding: 2rem 7rem;
+    background: #e9e9e9ab;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+}
+.container_TMH {
+    position: relative;
+    width: 1240px;
+    height: 700px;
+}
+@media screen and (max-width : 860px)
+  {
+    .TMH-column{
+        background-color: rgba(75, 243, 145, 0.267);
+        height: 700px;
+        width: 620px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 300%;
+        color: #ffffff;
+        background-image: url("Take_Me_Home.jpg");
+    }
+    .small_box_TMH{
+        display: -webkit-flex; 
+        display: flex; 
+        -webkit-flex-direction: row; 
+        flex-direction: column; 
+        -webkit-align-items: center; 
+        align-items: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        position: absolute; 
+        width: 600px; 
+        height: 650px;
+        border-radius: 10px;
+        top: 3%; 
+        left: 1%; 
+        background: rgba(154, 189, 255, 0.623);  
+        font-size: 30%;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .TMH{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 500%; 
+        text-align:center;
+        color: #ffffff;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    .TMH_btn{
+        display : inline-block;
+        padding: 2rem 4rem;
+        background: #e9e9e9ab;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 10px;
+    }
+    .container_TMH {
+        position: relative;
+        width: 620px;
+        height: 700px;
+    }
+  }
+
+/* Style for Album UP ALL NIGHT */
+.UAL-column{
+    background-color: rgba(75, 243, 145, 0.267);
+    height: 700px;
+    width: 1240px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #ffffff;
+    background-image: url("up_all_night.jpg");
+}
+.small_box_UAL{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 1200px; 
+    height: 650px;
+    border-radius: 10px;
+    top: 3%; 
+    left: 1%; 
+    background: rgba(29, 70, 56, 0.596);  
+    font-size: 30%;
+    font-family: 'Source Code Pro', monospace;
+}
+.UAL{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 500%; 
+    text-align:center;
+    color: #ffffff;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.UAL_btn{
+    display : inline-block;
+    padding: 2rem 7rem;
+    background: #e9e9e9ab;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000000;
+    border-radius: 10px;
+}
+.container_UAL {
+    position: relative;
+    width: 1240px;
+    height: 700px;
+}
+@media screen and (max-width : 860px)
+{
+    .UAL-column{
+        background-color: rgba(75, 243, 145, 0.267);
+        height: 700px;
+        width: 620px;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        font-family: 'Montserrat Subrayada', sans-serif;
+        font-size: 300%;
+        color: #ffffff;
+        background-image: url("up_all_night.jpg");
+    }
+    .small_box_UAL{
+        display: -webkit-flex; 
+        display: flex; 
+        -webkit-flex-direction: row; 
+        flex-direction: column; 
+        -webkit-align-items: center; 
+        align-items: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        position: absolute; 
+        width: 600px; 
+        height: 650px;
+        border-radius: 10px;
+        top: 3%; 
+        left: 1%; 
+        background: rgba(24, 97, 79, 0.596);  
+        font-size: 30%;
+        font-family: 'Source Code Pro', monospace;
+    }
+    .UAL{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 500%; 
+        text-align:center;
+        color: #ffffff;
+        border-bottom: 2px solid rgb(255, 255, 255);
+    }
+    .UAL_btn{
+        display : inline-block;
+        padding: 2rem 4rem;
+        background: #e9e9e9ab;
+        font-size: 2rem;
+        text-decoration: none;
+        color: #000000;
+        border-radius: 10px;
+    }
+    .container_UAL {
+        position: relative;
+        width: 620px;
+        height: 700px;
+    }
+}
+
+/*Style for Band Page*/
+/*Common Styling for all the members*/
+.band-member{
+    background-color: rgba(253, 251, 120, 0.685);
+    height: 600px;
+    width: 615px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #000000;
+    text-shadow: #413f3f;
+    
+    opacity:0;
+    transform:translateY(100%);
+    transition:opacity .6s, transform .6s;
+}
+/*Styling for the scroll*/
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+/*Band Member Louis*/
+.band-member-louis{
+    background-color: rgba(253, 251, 120, 0.685);
+    height: 600px;
+    width: 615px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #000000;
+    text-shadow: #413f3f;
+    background-image: url("Louis_1.jpg");
+}
+/*Style for Louis Description*/
+.louis-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2
+}
+.band-louis-column {
+background-color: rgba(75, 243, 145, 0.267);
+height: 600px;
+width: 615px;
+align-items: center;
+justify-content: center;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-size: 300%;
+color: #000000;
+background-image: url("Fifth_Flex_Pic_2.jpg");
+}
+.container_louis {
+    position: relative;
+    width: 615px;
+    height: 600px;
+}
+/*Band Member Harry*/
+.band-member-harry{
+    background-color: rgba(253, 251, 120, 0.685);
+    height: 600px;
+    width: 615px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #000000;
+    text-shadow: #413f3f;
+    background-image: url("Harry_1.jpg");
+}
+/*Style for Harry Description*/
+.harry-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2
+}
+.band-harry-column {
+background-color: rgba(75, 243, 145, 0.267);
+height: 600px;
+width: 615px;
+align-items: center;
+justify-content: center;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-size: 300%;
+color: #000000;
+background-image: url("Fifth_Flex_Pic_2.jpg");
+}
+.container_harry {
+    position: relative;
+    width: 615px;
+    height: 600px;
+}
+/*Band Member Liam*/
+.band-member-liam{
+    background-color: rgba(253, 251, 120, 0.685);
+    height: 600px;
+    width: 615px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #000000;
+    text-shadow: #413f3f;
+    background-image: url("Liam_1.jpg");
+}
+/*Style for Liam Description*/
+.liam-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2
+}
+.band-liam-column {
+background-color: rgba(75, 243, 145, 0.267);
+height: 600px;
+width: 615px;
+align-items: center;
+justify-content: center;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-size: 300%;
+color: #000000;
+background-image: url("Fifth_Flex_Pic_2.jpg");
+}
+.container_liam {
+    position: relative;
+    width: 615px;
+    height: 600px;
+}
+/*Band Member Niall*/
+.band-member-niall{
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 615px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 300%;
+    color: #000000;
+    text-shadow: #413f3f;
+    background-image: url("Niall_1.png");
+}
+/*Style for Niall Description*/
+.niall-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2
+}
+.band-niall-column {
+background-color: rgba(75, 243, 145, 0.267);
+height: 600px;
+width: 615px;
+align-items: center;
+justify-content: center;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+text-align: center;
+font-family: 'Montserrat Subrayada', sans-serif;
+font-size: 300%;
+color: #000000;
+background-image: url("Fifth_Flex_Pic_2.jpg");
+}
+.container_niall {
+    position: relative;
+    width: 615px;
+    height: 600px;
+}
+.band-text{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    width: 615px; 
+    height: 530px;
+    border-radius: 10px;
+    top: 3%; 
+    left: 1%; 
+    background: rgba(255, 255, 255, 0.568);  
+    font-size: 30%;
+    font-family: 'Source Code Pro', monospace;
+}
+.band-text-2{
+    width: 500px;
+    padding:1px;
+    border-color: #000000;
+    border-style: solid;
+}
+.Tour-section{
+    position: relative;
+    width:100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+}
+.Tour-section h1{
+    text-align: center;
+    font-size: 6rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    padding: 20px;
+    margin: 15px;
+
+}
+.Tour-section h2{
+    border-bottom: 5px solid #ffffff;
+    text-align: center;
+    font-size: 4rem;
+    font-family: 'Source Code Pro', monospace;
+    color: #fff;
+    padding: 20px;
+    margin: 15px;
+    text-transform: uppercase;
+}
+.Tour-section ul,.Tour-section ul li{
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    padding: 3px;
+}
+
+.ParallaxVideo{ 
+    width: fit-content;
+}
+.ParallaxVideo video{ 
+min-width: 100%;
+position: fixed;
+top:0;
+z-index: -999;
+}
+.ParallaxVideo h1 {
+    color: #fff;
+    font-size: 76px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+.date{
+    float: left;
+    padding-left: 40px;
+}
+.location{
+    float:left;
+    padding-left: 10%;
+}
+.venue{
+    float: right;
+    padding-left: 10px;
+    
+}
+
+/*Styling for Bookings Tab*/
+.form{
+    width:540px;
+    height:540px;
+    background:#e6e6e6;
+    border-radius:8px;
+    box-shadow:0 0 40px -10px #000;
+    margin:calc(50vh - 220px) auto;
+    padding:20px 30px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;
+    font-family:'Montserrat',sans-serif;
+    position:relative
+}
+.form h2{
+    margin:10px 0;
+    padding-bottom:10px;
+    width:180px;color:#78788c;
+    border-bottom:3px solid #78788c
+}
+.form p input{
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #bebed2
+}
+.form p input:focus{
+    border-bottom:2px solid #78788c
+}
+.form p:before{
+    content:attr(type);
+    display:block;
+    margin:28px 0 0;
+    font-size:14px;
+    color:#5a5a5a
+}
+button{
+    float:right;
+    padding:8px 12px;
+    margin:8px 0 0;
+    font-family:'Montserrat',sans-serif;
+    border:2px solid #78788c;
+    background:0;color:#5a5a6e;
+    cursor:pointer;
+    transition:all .3s
+}
+button:hover{
+    background:#78788c;
+    color:#fff
+}
+.contact-band{
+    content:'Hi';
+    position:absolute;
+    bottom:-15px;
+    right:-20px;
+    background:#50505a;
+    color:#fff;
+    width:320px;
+    padding:16px 4px 16px 0;
+    border-radius:6px;
+    font-size:13px;
+    box-shadow:10px 10px 40px -14px rgb(68, 65, 65)
+}
+.contact-band span{
+    margin:0 5px 0 15px
+}
+
+
+
+/* Styles for Band Archive Tab */
+.band-archive{
+    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    font: 16px/1.3 sans-serif;
+}
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 200%; /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+	background: #fff;
+	position: absolute;
+	width:       60px;
+	height:      60px;
+	line-height: 60px; /* If you want to place numbers */
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+}
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 10px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       30px;
+	height:      30px;
+	line-height: 30px;
+	text-decoration: none;
+	text-align: center;
+	background: rgba(255, 255, 255, 1);
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#s2:target ~ .bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#s3:target ~ .bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#s4:target ~ .bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+
+
+
+.CSSgal{
+	color: #fff;	
+    text-align: center;
+    height: 600px;
+}
+.CSSgal .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
 }
