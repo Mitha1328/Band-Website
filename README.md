@@ -17,6 +17,7 @@ One Direction is a Boy-Band which has many girl fans.
 The design must encase the Boy's edgy side and it must be aesthetically trendy and catchy to the eyes of the young girl fandom.
 I took some inspiration from One Direction's Original Website too.
 
+
 Features:
  1)Using Flex-Box:
     Using flex-box to decorate the website makes it really easy to transform into a Responsive Html Site.
@@ -38,8 +39,9 @@ Features:
     Slide-Show is a feature that I implemented into the "Band-Archive" tab. Where I embeded youtube videos of One Direction's Music Videos so that the viewers of the website can get straight experience of the Band's edgy music.
 
 
-Existing Features
 
+Existing Features
+    A normal yet responsive page that is neat and relvant with due containers
 
 Additional features to be implemented in the future:
 1) Sticky Header
@@ -57,6 +59,7 @@ I have used HTML, CSS, and a light amount of javascript to make a fade in image 
 
 Contact form:
 For the Forms page, I have created a "Book Us" page where any coorperate individuals could send in their queries to Book the Band for major events.
+The contact us page does give relevant error messages (checked)
 
 Interesting bugs or problems that I discovered during my testing
 
@@ -68,9 +71,11 @@ Credits
     I would really credit the lecture notes and W3 School where I was able to learn many things from.
 
 Content
+    WireFrame XD Link: ID_S10207330_Selvam Madhumitha_Assg1_wireframe
 
 Media
 The photos used in this site were obtained from ...
+
 Fifth_Flex_Pic < https://wall.alphacoders.com/big.php?i=617625 >
 Fifth_Flex_Pic_2 < https://www.pinterest.com/pin/392798398725308923/ >
 First_Flex_Pic < http://www.justjaredjr.com/2013/12/12/one-direction-milan-is-nuts-today/ >
