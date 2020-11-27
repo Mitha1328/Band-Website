@@ -17,11 +17,6 @@ One Direction is a Boy-Band which has many girl fans.
 The design must encase the Boy's edgy side and it must be aesthetically trendy and catchy to the eyes of the young girl fandom.
 I took some inspiration from One Direction's Original Website too.
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
-
-As a user type, I want to perform an action, so that I can achieve a goal.
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory) Include the Adobe XD wireframe as a folder. You can include the XD share url.
-
 Features:
  1)Using Flex-Box:
     Using flex-box to decorate the website makes it really easy to transform into a Responsive Html Site.
@@ -44,7 +39,7 @@ Features:
 
 
 Existing Features
-Feature 1 - allows users X to achieve Y, by having them fill out Z
+
 
 Additional features to be implemented in the future:
 1) Sticky Header
@@ -58,7 +53,7 @@ Another feature idea
 1) Shop Tab - a new html page where it showcases merchendise and other products by One Direction where the fans can buy to get into the Jolly crazy mood!
 
 Technologies Used
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+I have used HTML, CSS, and a light amount of javascript to make a fade in image on scroll.
 
 Contact form:
 For the Forms page, I have created a "Book Us" page where any coorperate individuals could send in their queries to Book the Band for major events.
