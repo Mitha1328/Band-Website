@@ -30,20 +30,36 @@
         <li><a href="Tour.html" target="_blank">TOUR</a></li>
         <li><a href="Booking.html" target="_blank">BOOKING</a></li>
         <!-- <li><a href="Shop.html" target="_blank">SHOP</a></li> -->
-        <li><a href="Band_archive.html" target="_blank">BAND ARCHIVE</a></li>
+        <li><a href="Band-archive.html" target="_blank">BAND ARCHIVE</a></li>
     </ul>
-    <form class="form">
-        <h2>Book US</h2>
-        <h2>For Coorperate Events!</h2>
-        <p type="Name:"><input placeholder="Organization Name"></input></p>
-        <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
-        <p type="Message:"><input placeholder="What type of event..."></input></p>
-        <button>Send Message</button>
-        <div class="contact-band">
-          <span class="fa fa-phone"aria-hidden="true"></span>032-543-879123
-          <span class="fa fa-envelope-o"></span> onedirection@company.com
+    <div class="event-booking">
+        <div class="event-container">  
+            <form id="contact" action="" method="post">
+            <h3>Book Us!</h3>
+            <h4>Book us today! for Coorperate Events</h4>
+            <h4>We will Get Back to you in 3 Business Days.</h4>
+            <fieldset>
+                <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Email Address" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Your Coorperate Business Social Account" type="url" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            </form>
         </div>
-    </form>
+        </form>
+    </div>
 
     <footer style="height:auto; background-color:#000000;">
         <a target="_blank" href="https://www.facebook.com/onedirectionmusic">

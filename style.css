@@ -13,7 +13,6 @@ nav ul li a{
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Vampiro+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
@@ -22,6 +21,7 @@ nav ul li a{
 @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 /*Menu Styles*/
 /*Strip the ul of padding and list styling*/
@@ -34,7 +34,7 @@ ul {
 /*Create a horizontal list with spacing*/
 li {
     display:inline-block;
-    margin-right: 93px;
+    margin-right: 90px;
 }
 /*Style for menu links*/
 li a {
@@ -149,23 +149,6 @@ body, html {
     align-self: flex-start;
 }
 
-.list-inline {
-	list-style: none;
-	margin-left: -0.5em;
-	margin-right: -0.5em;
-	padding: 0;
-}
-
-.list-inline > li {
-	display: inline-block;
-	margin-left: 0.5em;
-	margin-right: 0.5em;
-}
-
-.list-inline > li:before {
-	content: "\200B"; /* 1 */
-	position: absolute; /* 2 */
-}
 
 
 /*Header Image*/
@@ -350,13 +333,12 @@ div a, h4 a:active {
     color: #f3f3f3;
   }
   /*Style for the word History (In Titles)*/
-  .History{
+.History{
     font-family: 'Special Elite', cursive;
-    font-weight: 9000;
     color: #000000;
     text-align: center;
     font-size: 200%;
-  }
+}
 /*Style for the longer lengthed flex box Number 1*/
 .double-column {
     display: flex;
@@ -1134,6 +1116,31 @@ footer a{
 
 /*Style for Band Page*/
 /*Common Styling for all the members*/
+.band-member-name{
+    display: -webkit-flex; 
+    display: flex; 
+    -webkit-flex-direction: row; 
+    flex-direction: column; 
+    -webkit-align-items: center; 
+    align-items: center; 
+    -webkit-justify-content: center; 
+    justify-content: center; 
+    position: absolute; 
+    border-radius: 10px;
+    top: 50%; 
+    left: 20%; 
+    background: rgba(36, 36, 36, 0.568);  
+    font-size: 30%;
+    font-family: 'Source Code Pro', monospace;
+    color: #ffffff; 
+    width: 300px; 
+    padding:1px; 
+    border-color: #ffffff; 
+    border-style: solid;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 50%;
+    text-align: center;
+}
 .band-member{
     background-color: rgba(253, 251, 120, 0.685);
     height: 600px;
@@ -1427,78 +1434,136 @@ z-index: -999;
 }
 
 /*Styling for Bookings Tab*/
-.form{
-    width:540px;
-    height:540px;
-    background:#e6e6e6;
-    border-radius:8px;
-    box-shadow:0 0 40px -10px #000;
-    margin:calc(50vh - 220px) auto;
-    padding:20px 30px;
-    max-width:calc(100vw - 40px);
-    box-sizing:border-box;
-    font-family:'Montserrat',sans-serif;
-    position:relative
-}
-.form h2{
-    margin:10px 0;
-    padding-bottom:10px;
-    width:180px;color:#78788c;
-    border-bottom:3px solid #78788c
-}
-.form p input{
-    width:100%;
-    padding:10px;
-    box-sizing:border-box;
-    background:none;
-    outline:none;
-    resize:none;
-    border:0;
-    font-family:'Montserrat',sans-serif;
-    transition:all .3s;
-    border-bottom:2px solid #bebed2
-}
-.form p input:focus{
-    border-bottom:2px solid #78788c
-}
-.form p:before{
-    content:attr(type);
-    display:block;
-    margin:28px 0 0;
-    font-size:14px;
-    color:#5a5a5a
-}
-button{
-    float:right;
-    padding:8px 12px;
-    margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
-    border:2px solid #78788c;
-    background:0;color:#5a5a6e;
-    cursor:pointer;
-    transition:all .3s
-}
-button:hover{
-    background:#78788c;
-    color:#fff
-}
-.contact-band{
-    content:'Hi';
-    position:absolute;
-    bottom:-15px;
-    right:-20px;
-    background:#50505a;
-    color:#fff;
-    width:320px;
-    padding:16px 4px 16px 0;
-    border-radius:6px;
-    font-size:13px;
-    box-shadow:10px 10px 40px -14px rgb(68, 65, 65)
-}
-.contact-band span{
-    margin:0 5px 0 15px
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600);
+
+.event-booking {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
 }
 
+.event-booking {
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	font-size: 12px;
+	line-height:30px;
+	color:#777;
+}
+
+.event-container {
+	max-width:500px;
+	width:100%;
+	margin:0 auto;
+	position:relative;
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact input[type="url"], 
+#contact textarea, #contact button[type="submit"] 
+{ 
+    font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; 
+}
+
+#contact {
+	background:#F9F9F9;
+	padding:25px;
+	margin:50px 0;
+}
+
+#contact h3 {
+	color: #F96;
+	display: block;
+	font-size: 30px;
+	font-weight: 400;
+}
+
+#contact h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+
+fieldset {
+	border: medium none !important;
+	margin: 0 0 10px;
+	min-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+#contact input[type="text"], 
+#contact input[type="email"], 
+#contact input[type="tel"], 
+#contact input[type="url"], 
+#contact textarea {
+	width:100%;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+}
+
+#contact input[type="text"]:hover, 
+#contact input[type="email"]:hover, 
+#contact input[type="tel"]:hover, 
+#contact input[type="url"]:hover, 
+#contact textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+
+#contact textarea {
+	height:100px;
+	max-width:100%;
+  resize:none;
+}
+
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:rgb(109, 109, 109);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	font-size:15px;
+}
+
+#contact button[type="submit"]:hover {
+	background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active { box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5); }
+
+#contact input:focus, #contact textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+ color:#888;
+}
+:-moz-placeholder {
+ color:#888;
+}
+::-moz-placeholder {
+ color:#888;
+}
+:-ms-input-placeholder {
+ color:#888;
+}
 
 
 /* Styles for Band Archive Tab */
@@ -1651,4 +1716,17 @@ http://stackoverflow.com/a/34696029/383904
 	margin: 0 3px;
 	color: rgba(0,0,0,0.8);
 	text-decoration: none;
+}
+.video-diaries{
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 300%;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.video-diary{
+    justify-content: center;
 }
